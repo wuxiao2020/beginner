@@ -13,7 +13,7 @@ public class Main {
         service.login("lxy5266@live.com", "hhhhhhh", "on");//登陆
         List<String> urls = service.getAllPagesURL();//获得所有相册页面地址
         for (String url : urls) {
-            System.out.println("正在下载页面:"+url);
+            System.out.println("正在下载页面中:"+url);
             List<PhotoAlbum> photoAlbums = service.getPhotoAlbums(url);//获得当前页面的相册
             for (PhotoAlbum photoAlbum : photoAlbums) {
                 System.out.println("正在处理相册:"+photoAlbum);
